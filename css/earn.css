@@ -1,0 +1,93 @@
+.container-earn{
+        padding: 3rem 10rem;
+}
+.earn-head .earn-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.earn-head .earn-desc {
+    font-size: 0.9rem;
+    color: #cecece;
+    letter-spacing: 0;
+    line-height: 1.5rem;
+    max-width: 90%;
+}   
+.earn-stakes-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+.App-card{
+    margin-top: 30px;
+    padding: 0.8rem 1rem;
+    background: #151515;
+    border: 1px solid #4d4d4e;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+}
+.App-card-title {
+    /* line-height: 2.1rem; */
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #ffffff;
+    /* margin-bottom: 1.5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .label{
+    color: #cecece;
+  }
+  .App-card-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 1.5rem;
+    padding: unset;
+    font-size: 0.95rem;
+  }
+  .App-card-row.inner {
+    padding-left: 1.5rem;
+  }
+  .App-card-row > div:last-child {
+    text-align: right;
+  }
+  .App-card-content {
+    display: grid;
+    grid-row-gap: 0.3rem;
+  }
+  /* .App-card-options {
+    padding: -1rem 0.5rem;
+  } */
+  
+ .App-card-divider {
+    height: 1px;
+    background: #4d4d4e;
+    margin: 1rem -1rem;
+}
+.Tooltip-handle {
+    cursor: help;
+    position: relative;
+    display: inline-flex;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dashed;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    -webkit-text-decoration-color: hsla(0,0%,100%,.6);
+    text-decoration-color: hsla(0,0%,100%,.6);
+}
+.App-card-bottom{
+    margin-top: 10rem;
+}
+@media (max-width: 900px){
+  .container-earn{
+    padding: 3rem 2rem;
+  }
+    .earn-stakes-card{
+        grid-template-columns: 1fr;
+    }
+    .App-card-bottom{
+      margin-top: 0rem;
+  }
+}
+

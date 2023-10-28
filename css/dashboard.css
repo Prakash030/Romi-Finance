@@ -1,0 +1,151 @@
+.token-table-wrapper {
+    border: 1px solid #4d4d4e;
+    border-radius: 0.4rem;
+    background: #151515;
+    padding: 0 1.5rem;
+    text-align: left;
+    width: 100%;
+  }
+  .token-table-wrapper .App-card-title {
+    justify-content: unset;
+  }
+  .App-card-title {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.App-card1{
+    padding: 1.5rem 1.5rem 1.86rem;
+    border: 1px solid #4d4d4e;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+}
+.App-card-title-info{
+    display: flex;
+}
+.App-card-title-info-text{
+    margin-left: 10px;
+}
+/* td {
+    display: table-cell;
+    vertical-align: inherit;
+} */
+.token-table td, .token-table th {
+    padding: 1rem 3rem;
+}
+.token-table th {
+    font-weight: 400;
+    letter-spacing: .25px;
+    color: #a9a9b0;
+    text-transform: uppercase;
+}
+table th:first-child {
+    padding-left: 1.5rem;
+    width: 26.35rem;
+}
+.token-table td {
+    letter-spacing: .25px;
+    color: hsla(0,0%,100%,.8705882352941177);
+}
+
+.token-table .token-symbol-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.token-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.5rem;
+    margin-top: 0.8rem;
+}
+
+.mobile-token-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.stats-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.App-card-title-mark {
+    display: flex;
+}
+.App-card-title-mark .App-card-title-mark-title {
+    font-size: 1rem;
+    line-height: 2.1rem;
+    letter-spacing: 0;
+    color: #fff;
+}
+.App-card-title-mark .App-card-title-mark-subtitle {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    color: #a9a9b0;
+}
+.label{
+    font-size: 0.8rem;
+}
+.stats-block {
+    width: 100%;
+}
+.stats-piechart {
+    margin: -1rem -1rem -1rem 1.5rem;
+}
+.stats-wrapper .App-card {
+    width: 100%;
+    display: flex;
+}
+@media (max-width: 1100px){
+    .container-earn{
+        padding: 3rem 2rem;
+      }
+    .token-table-wrapper{
+        display: none;
+    }
+}
+@media (max-width: 1020px){
+    .stats-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-gap: 1.5rem; */
+    }
+}
+@media (max-width: 660px){
+    .stats-wrapper .App-card {
+        width: 100%;
+        display: block;
+    
+    }
+    .stats-piechart {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .token-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1.5rem;
+        margin-top: 0.8rem;
+    }
+    .App-card{
+        margin: 0;
+    }
+}

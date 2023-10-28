@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/earn.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <div id="header"></div>
+    <div class="content">
+        <div class="container-earn">
+            <div class="earn-head">
+                <div class="earn-title">Earn</div>
+                <div class="earn-desc">Stake $ROMI and $ZLP to earn rewards.</div>
+            </div>
+            <div class="earn-stakes-card">
+                <div class="App-card">
+                    <div class="App-card-title">$ZOMI</div>
+                    <div class="App-card-divider"></div>
+                    <div class="App-card-content">
+                        <div class="App-card-row">
+                            <div class="label">Price</div>
+                            <div><span class="Tooltip nowrap"><span class="Tooltip-handle">$0.00</span></span>
+                            </div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Wallet</div>
+                            <div>... $ZOMI ($...)</div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Staked</div>
+                            <div>... $ZOMI ($...)</div>
+                        </div>
+                        <div class="App-card-divider"></div>
+                        <div class="App-card-row">
+                            <div class="label">APR</div>
+                            <div>
+                                <span class="Tooltip">
+                                    <span class="Tooltip-handle">...%</span></span>
+                            </div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Rewards</div>
+                            <div><span class="Tooltip"><span class="Tooltip-handle">$...</span></span></div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Multiplier Points APR</div>
+                            <div>
+                                <span class="Tooltip"><span class="Tooltip-handle">100.00%</span></span>
+                            </div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Boost Percentage</div>
+                            <div><span class="Tooltip"><span class="Tooltip-handle">...%</span></span>
+                            </div>
+                        </div>
+                        <div class="App-card-divider"></div>
+                        <div class="App-card-row">
+                            <div class="label">Total Staked</div>
+                            <div>0 $ZOMI ($...)</div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Total Supply</div>
+                            <div>10,000 $ZOMI ($10)</div>
+                        </div>
+                        <div class="App-card-divider"></div>
+                        <div class="App-card-options"><button class="button1">Buy $Romi</button></div>
+                    </div>
+                </div>
+                <div class="App-card primary">
+                    <div class="App-card-title">Total Rewards</div>
+                    <div class="App-card-divider"></div>
+                    <div class="App-card-content">
+                        <div class="App-card-row">
+                            <div class="label">ETH (WETH)</div>
+                            <div>... ($...)</div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">$ZOMI</div>
+                            <div>... ($...)</div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Escrowed $ZOMI</div>
+                            <div>... ($...)</div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Multiplier Points</div>
+                            <div>...</div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Staked Multiplier Points</div>
+                            <div>...</div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Total</div>
+                            <div>$...</div>
+                        </div>
+                        <!-- <div class="App-card-bottom-placeholder">
+                            <div class="App-card-divider"></div>
+                            <div class="App-card-options"><button class="App-button-option App-card-option">Connect
+                                    Wallet</button></div>
+                        </div> -->
+                        <div class="App-card-bottom">
+                            <div class="App-card-divider"></div>
+                            <div><button class="button1">Connect
+                                    Wallet</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="App-card" style="margin-top: 0px;">
+                    <div class="App-card-title">$ZLP</div>
+                    <div class="App-card-divider"></div>
+                    <div class="App-card-content">
+                        <div class="App-card-row">
+                            <div class="label">Price</div>
+                            <div><span class="Tooltip nowrap"><span class="Tooltip-handle">$...</span></span>
+                            </div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Wallet</div>
+                            <div>... $ZLP ($...)</div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Staked</div>
+                            <div>... $ZLP ($...)</div>
+                        </div>
+                        <div class="App-card-divider"></div>
+                        <div class="App-card-row">
+                            <div class="label">APR</div>
+                            <div>
+                                <span class="Tooltip">
+                                    <span class="Tooltip-handle">...%</span></span>
+                            </div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Rewards</div>
+                            <div><span class="Tooltip"><span class="Tooltip-handle">$...</span></span></div>
+                        </div>
+                        <div class="App-card-divider"></div>
+                        <div class="App-card-row">
+                            <div class="label">Total Staked</div>
+                            <div>... $ZLP ($...)</div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Total Supply</div>
+                            <div>... $ZLP ($...)</div>
+                        </div>
+                        <div class="App-card-divider"></div>
+                        <div class="App-card-options">
+                            <button class="button1" style="margin-right: 10px;">Buy $ZLP</button>
+                            <button class="button1">Sell $ZLP</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="App-card" style="margin-top: 0px;">
+                    <div class="App-card-title">Escrowed $ROMI</div>
+                    <div class="App-card-divider"></div>
+                    <div class="App-card-content">
+                        <div class="App-card-row">
+                            <div class="label">Price</div>
+                            <div><span class="Tooltip nowrap"><span class="Tooltip-handle">$0.0</span></span>
+                            </div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Wallet</div>
+                            <div>... esROMI ($...)</div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Staked</div>
+                            <div>... esROMI ($...)</div>
+                        </div>
+                        <div class="App-card-divider"></div>
+                        <div class="App-card-row">
+                            <div class="label">APR</div>
+                            <div>
+                                <span class="Tooltip">
+                                    <span class="Tooltip-handle">...%</span></span>
+                            </div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Multiplier Points APR</div>
+                            <div><span class="Tooltip"><span class="Tooltip-handle">100.00%</span></span></div>
+                        </div>
+                        <div class="App-card-divider"></div>
+                        <div class="App-card-row">
+                            <div class="label">Total Staked</div>
+                            <div>... esROMI ($...)</div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Total Supply</div>
+                            <div>1,023,379 esZOMI ($1,051)</div>
+                        </div>
+                        <div class="App-card-divider"></div>
+                        <div class="App-card-options">
+                            <button class="button1">Connect Wallet</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="earn-head" style="margin-top: 30px;">
+                <div class="earn-title">Vest</div>
+                <div class="earn-desc">Convert esZOMI tokens to $ZOMI tokens. <br>
+                    Please read the <u style="cursor: pointer;"> vesting details </u> before using the vaults.</div>
+            </div>
+
+            <div class="earn-stakes-card">
+                <div class="App-card StakeV2-gmx-card">
+                    <div class="App-card-title">$ROMI Vault</div>
+                    <div class="App-card-divider"></div>
+                    <div class="App-card-content">
+                        <div class="App-card-row">
+                            <div class="label">Staked Tokens</div>
+                            <div><span class="Tooltip"><span class="Tooltip-handle">...</span></span></div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Reserved for Vesting</div>
+                            <div>0.00 / ...</div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Vesting Status</div>
+                            <div><span class="Tooltip"><span class="Tooltip-handle">0.0000 / 0.0000</span></span></div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Claimable</div>
+                            <div><span class="Tooltip"><span class="Tooltip-handle">0.0000 $ROMI</span></span></div>
+                        </div>
+                        <div class="App-card-divider"></div>
+                        <div><button class="button1">Connect
+                                Wallet</button></div>
+                    </div>
+                </div>
+                <div class="App-card StakeV2-gmx-card">
+                    <div class="App-card-title">$ZLP Vault</div>
+                    <div class="App-card-divider"></div>
+                    <div class="App-card-content">
+                        <div class="App-card-row">
+                            <div class="label">Staked Tokens</div>
+                            <div>... $ZLP</div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Reserved for Vesting</div>
+                            <div>0.00 / ...</div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Vesting Status</div>
+                            <div><span class="Tooltip"><span class="Tooltip-handle">0.0000 / 0.0000</span></span></div>
+                        </div>
+                        <div class="App-card-row">
+                            <div class="label">Claimable</div>
+                            <div><span class="Tooltip"><span class="Tooltip-handle">0.0000 $ROMI</span></span></div>
+                        </div>
+                        <div class="App-card-divider"></div>
+                        <div><button class="button1">Connect
+                                Wallet</button></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="App-divider"></div>
+    </div>
+    <div id="footer"></div>
+
+
+
+</body>
+<script src="https://kit.fontawesome.com/d6d5bf97ae.js" crossorigin="anonymous"></script>
+<script src="./js/index.js"></script>
+
+</html>
